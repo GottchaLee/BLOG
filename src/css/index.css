@@ -23,6 +23,8 @@ body {
 
 .nav-links {
   display: flex;
+  justify-content: space-evenly;
+  padding: 0 5%;
 }
 
 .nav-link {
@@ -43,9 +45,25 @@ body {
   }
   .hamburger-menu {
     display: block;
-    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    text-align: center;
     color: white;
-    font-size: 24px;
+    cursor: pointer;
+  }
+  .hamburger-menu:hover span {
+    color: #ff9800;
+    opacity: 0;
+  }
+  .hamburger-menu:hover .nav-links {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 1s;
   }
 }
 @media screen and (min-width: 769px) {

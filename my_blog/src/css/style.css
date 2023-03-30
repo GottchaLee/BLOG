@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face{
+    font-family: "myfont";
+    src: url("../assets/font/myfont.otf") format("opentype");
+} 
+@layer base{
+
+}
+
+@layer components{
+    .content-center{
+        flex-wrap:wrap;
+        align-items: center;
+    }
+}
